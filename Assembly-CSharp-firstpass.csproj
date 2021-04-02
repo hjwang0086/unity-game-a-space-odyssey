@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<RootNamespace></RootNamespace>
+	<ProjectGuid>{B828064A-437F-82D3-EF2B-DA2B53BB594C}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_5_2_1;UNITY_5_2;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_REFLECTION_BUFFERS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;CROSS_PLATFORM_INPUT;MOBILE_INPUT;SOOMLA_FACEBOOK</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Plugins\Facebook\Scripts\AccessToken.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\AppEventName.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\AppEventParameterName.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\CallbackManager.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Canvas\CanvasFacebook.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Canvas\CanvasFacebookGameObject.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Canvas\CanvasFacebookLoader.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Canvas\CanvasJSWrapper.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Canvas\ICanvasFacebook.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Canvas\ICanvasFacebookCallbackHandler.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Canvas\ICanvasFacebookImplementation.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Canvas\ICanvasJSWrapper.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Canvas\JsBridge.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\ComponentFactory.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Constants.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\FB.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\FacebookBase.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\FacebookGameObject.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\FacebookSdkVersion.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\FacebookSettings.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\FacebookUnityPlatform.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\IFacebook.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\IFacebookCallbackHandler.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\IFacebookImplementation.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\MethodArguments.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\MethodCall.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Mobile\Android\AndroidFacebook.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Mobile\Android\AndroidFacebookGameObject.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Mobile\Android\AndroidFacebookLoader.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Mobile\Android\FBJavaClass.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Mobile\Android\IAndroidJavaClass.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Mobile\IMobileFacebook.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Mobile\IMobileFacebookCallbackHandler.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Mobile\IMobileFacebookImplementation.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Mobile\IOS\IIOSWrapper.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Mobile\IOS\IOSFacebook.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Mobile\IOS\IOSFacebookGameObject.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Mobile\IOS\IOSFacebookLoader.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Mobile\IOS\IOSWrapper.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Mobile\MobileFacebook.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Mobile\MobileFacebookGameObject.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\NativeDialogModes.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\OGActionType.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\PlatformEditor\EditorFacebook.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\PlatformEditor\EditorFacebookGameObject.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\PlatformEditor\EditorFacebookLoader.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\PlatformEditor\EditorFacebookMockDialog.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\PlatformEditor\MockDialogs\EmptyMockDialog.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\PlatformEditor\MockDialogs\MockLoginDialog.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\PlatformEditor\MockDialogs\MockShareDialog.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Results\AccessTokenRefreshResult.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Results\AppInviteResult.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Results\AppLinkResult.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Results\AppReqeustResult.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Results\GraphResult.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Results\GroupCreateResult.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Results\GroupJoinResult.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Results\IAccessTokenRefreshResult.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Results\IAppInviteResult.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Results\IAppLinkResult.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Results\IAppRequestResult.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Results\IGraphResult.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Results\IGroupCreateResult.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Results\IGroupJoinResult.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Results\IInternalResult.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Results\ILoginResult.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Results\IPayResult.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Results\IResult.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Results\IShareResult.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Results\LoginResult.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Results\PayResult.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Results\ResultBase.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Results\ShareResult.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Utils\AsyncRequestString.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Utils\FacebookLogger.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Utils\HttpMethod.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Utils\IFacebookLogger.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Utils\MiniJson.cs" />
+     <Compile Include="Assets\Plugins\Facebook\Scripts\Utils\Utilities.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\AndroidImpl\KeyValueStorageAndroid.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\AndroidImpl\RewardStorageAndroid.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\Config\CoreSettings.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\Config\ISoomlaPostBuildTool.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\Config\ISoomlaSettings.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\Config\ObjectDictionary.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\Config\SoomlaEditorScript.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\Config\SoomlaPostBuildTools.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\Config\UnityDictionary.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\Config\android\ISoomlaManifestTools.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\Config\android\SoomlaAndroidUtil.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\Config\android\SoomlaManifestTools.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\CoreEvents.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\IOSImpl\KeyValueStorageIOS.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\IOSImpl\RewardStorageIOS.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\JSONObject.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\NullCheckable.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\Schedule.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\Singletons\BaseBehaviour.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\Singletons\CodeGeneratedSingleton.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\Singletons\SceneSingleton.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\Singletons\UnitySingleton.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\SoomlaEntity.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\SoomlaExtensions.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\SoomlaUtils.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\WPImpl\KeyValueStorageWP.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\WPImpl\RewardStorageWP.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\data\JSONConsts.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\data\KeyValueStorage.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\data\RewardStorage.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\events\CustomEvent.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\events\RewardGivenEvent.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\events\RewardTakenEvent.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\events\SoomlaEvent.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\rewards\BadgeReward.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\rewards\RandomReward.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\rewards\Reward.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\rewards\SequenceReward.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\AndroidImpl\ProfileEventPusherAndroid.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\AndroidImpl\ProfileJNIHandler.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\AndroidImpl\SoomlaProfileAndroid.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\Config\ProfileManifestTools.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\Config\ProfilePostBuildTool.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\Config\ProfileSettings.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\Domain\PJSONConsts.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\Domain\Provider.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\Domain\SocialActionType.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\Domain\UserProfile.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\IOSImpl\IOS_ProfileErrorCodes.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\IOSImpl\ProfileEventPusherIOS.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\IOSImpl\SoomlaProfileIOS.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\ModalDialog.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\ProfileEvents.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\ProfilePayload.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\SocialPageData.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\SoomlaProfile.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\events\ProfileInitializedEvent.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\events\UserProfileUpdatedEvent.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\events\UserRatingEvent.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\events\auth\LoginCancelledEvent.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\events\auth\LoginFailedEvent.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\events\auth\LoginFinishedEvent.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\events\auth\LoginStartedEvent.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\events\auth\LogoutFailedEvent.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\events\auth\LogoutFinishedEvent.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\events\auth\LogoutStartedEvent.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\events\game-services\GetLeaderboardsFailedEvent.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\events\game-services\GetLeaderboardsFinishedEvent.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\events\game-services\GetLeaderboardsStartedEvent.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\events\game-services\GetScoresFailedEvent.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\events\game-services\GetScoresFinishedEvent.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\events\game-services\GetScoresStartedEvent.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\events\game-services\ReportScoreFailedEvent.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\events\game-services\ReportScoreFinishedEvent.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\events\game-services\ReportScoreStartedEvent.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\events\social\BaseSocialActionEvent.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\events\social\GetContactsFailedEvent.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\events\social\GetContactsFinishedEvent.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\events\social\GetContactsStartedEvent.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\events\social\GetFeedFailedEvent.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\events\social\GetFeedFinishedEvent.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\events\social\GetFeedStartedEvent.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\events\social\InviteCancelledEvent.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\events\social\InviteFailedEvent.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\events\social\InviteFinishedEvent.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\events\social\InviteStartedEvent.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\events\social\SocialActionCancelledEvent.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\events\social\SocialActionFailedEvent.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\events\social\SocialActionFinishedEvent.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\events\social\SocialActionStartedEvent.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\exceptions\ProviderNotFoundException.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\exceptions\UserProfileNotFoundException.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\game-services\GameCenterGSProvider.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\game-services\GameServicesProvider.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\game-services\domain\Leaderboard.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\game-services\domain\Score.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\social-providers\AuthProvider.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\social-providers\FBSocialProvider.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\social-providers\GPSocialProvider.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\social-providers\SocialProvider.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Profile\social-providers\TwitterSocialProvider.cs" />
+     <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
+     <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\ButtonHandler.cs" />
+     <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs" />
+     <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\InputAxisScrollbar.cs" />
+     <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\Joystick.cs" />
+     <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\MobileControlRig.cs" />
+     <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\MobileInput.cs" />
+     <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\StandaloneInput.cs" />
+     <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\TiltInput.cs" />
+     <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\TouchPad.cs" />
+     <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\VirtualInput.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\Antialiasing.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\Bloom.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\BloomAndFlares.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\BloomOptimized.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\Blur.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\BlurOptimized.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\CameraMotionBlur.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\ColorCorrectionCurves.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\ColorCorrectionLookup.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\ColorCorrectionRamp.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\ContrastEnhance.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\ContrastStretch.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\CreaseShading.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\DepthOfField.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\DepthOfFieldDeprecated.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\EdgeDetection.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\Fisheye.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\GlobalFog.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\Grayscale.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\ImageEffectBase.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\ImageEffects.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\MotionBlur.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\NoiseAndGrain.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\NoiseAndScratches.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\PostEffectsBase.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\PostEffectsHelper.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\Quads.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\ScreenOverlay.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\ScreenSpaceAmbientObscurance.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\ScreenSpaceAmbientOcclusion.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\SepiaTone.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\SunShafts.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\TiltShift.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\Tonemapping.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\Triangles.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\Twirl.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\VignetteAndChromaticAberration.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\Vortex.cs" />
+     <Compile Include="Assets\Standard Assets\ParticleSystems\Scripts\AfterburnerPhysicsForce.cs" />
+     <Compile Include="Assets\Standard Assets\ParticleSystems\Scripts\ExplosionFireAndDebris.cs" />
+     <Compile Include="Assets\Standard Assets\ParticleSystems\Scripts\ExplosionPhysicsForce.cs" />
+     <Compile Include="Assets\Standard Assets\ParticleSystems\Scripts\Explosive.cs" />
+     <Compile Include="Assets\Standard Assets\ParticleSystems\Scripts\ExtinguishableParticleSystem.cs" />
+     <Compile Include="Assets\Standard Assets\ParticleSystems\Scripts\FireLight.cs" />
+     <Compile Include="Assets\Standard Assets\ParticleSystems\Scripts\Hose.cs" />
+     <Compile Include="Assets\Standard Assets\ParticleSystems\Scripts\ParticleSystemMultiplier.cs" />
+     <Compile Include="Assets\Standard Assets\ParticleSystems\Scripts\SmokeParticles.cs" />
+     <Compile Include="Assets\Standard Assets\ParticleSystems\Scripts\WaterHoseParticles.cs" />
+     <Compile Include="Assets\Standard Assets\Utility\ActivateTrigger.cs" />
+     <Compile Include="Assets\Standard Assets\Utility\AutoMobileShaderSwitch.cs" />
+     <Compile Include="Assets\Standard Assets\Utility\AutoMoveAndRotate.cs" />
+     <Compile Include="Assets\Standard Assets\Utility\CameraRefocus.cs" />
+     <Compile Include="Assets\Standard Assets\Utility\CurveControlledBob.cs" />
+     <Compile Include="Assets\Standard Assets\Utility\DragRigidbody.cs" />
+     <Compile Include="Assets\Standard Assets\Utility\DynamicShadowSettings.cs" />
+     <Compile Include="Assets\Standard Assets\Utility\EventSystemChecker.cs" />
+     <Compile Include="Assets\Standard Assets\Utility\FOVKick.cs" />
+     <Compile Include="Assets\Standard Assets\Utility\FPSCounter.cs" />
+     <Compile Include="Assets\Standard Assets\Utility\FollowTarget.cs" />
+     <Compile Include="Assets\Standard Assets\Utility\ForcedReset.cs" />
+     <Compile Include="Assets\Standard Assets\Utility\LerpControlledBob.cs" />
+     <Compile Include="Assets\Standard Assets\Utility\ObjectResetter.cs" />
+     <Compile Include="Assets\Standard Assets\Utility\ParticleSystemDestroyer.cs" />
+     <Compile Include="Assets\Standard Assets\Utility\PlatformSpecificContent.cs" />
+     <Compile Include="Assets\Standard Assets\Utility\SimpleActivatorMenu.cs" />
+     <Compile Include="Assets\Standard Assets\Utility\SimpleMouseRotator.cs" />
+     <Compile Include="Assets\Standard Assets\Utility\SmoothFollow.cs" />
+     <Compile Include="Assets\Standard Assets\Utility\TimedObjectActivator.cs" />
+     <Compile Include="Assets\Standard Assets\Utility\TimedObjectDestructor.cs" />
+     <Compile Include="Assets\Standard Assets\Utility\WaypointCircuit.cs" />
+     <Compile Include="Assets\Standard Assets\Utility\WaypointProgressTracker.cs" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-fr-rCA\common_strings.xml" />
+     <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-lo-rLA\common_strings.xml" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-sw\common_strings.xml" />
+     <None Include="Assets\FacebookSDK\SDK\Editor\android\DefaultAndroidManifest.xml" />
+     <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonBasic.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-am\common_strings.xml" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-ko\common_strings.xml" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\drawable\common_signin_btn_icon_light.xml" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-hr\common_strings.xml" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ShowAlphaChannel.shader" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-in\common_strings.xml" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-ru\common_strings.xml" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-pt-rBR\common_strings.xml" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\color\wallet_primary_text_holo_light.xml" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-zu\common_strings.xml" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\SunShaftsComposite.shader" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values\common_colors.xml" />
+     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionCurves.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ScreenSpaceAmbientObscurance.shader" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values\admob_ads_attrs.xml" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-lv\common_strings.xml" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-iw\common_strings.xml" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\NFAA.shader" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-tl\common_strings.xml" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\TiltShiftHdrLensBlur.shader" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-sk\common_strings.xml" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\color\wallet_secondary_text_holo_dark.xml" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\VignetteShader.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfFieldScatter.shader" />
+     <None Include="Assets\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularSmooth.shader" />
+     <None Include="Assets\Standard Assets\Effects\Projectors\Guidelines.txt" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-ar\common_strings.xml" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-pt-rPT\common_strings.xml" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values\admob_iap_style.xml" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\MotionBlur.shader" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-km-rKH\common_strings.xml" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBloom.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\MinMaxReduction.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\SSAA.shader" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-be\common_strings.xml" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\RadialBlur.shader" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\drawable\common_signin_btn_text_light.xml" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values\wallet_styles.xml" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-es\wallet_strings.xml" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfFieldDX11.shader" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\drawable\common_signin_btn_icon_dark.xml" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-es-rUS\common_strings.xml" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ContrastComposite.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset3.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\FisheyeShader.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Apply.shader" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-pl\common_strings.xml" />
+     <None Include="Assets\Fonts\Jupiter\LICENSE.txt" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\drawable\common_signin_btn_text_dark.xml" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\frag_ao.cginc" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-ca\common_strings.xml" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values\maps_attrs.xml" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values\wallet_colors.xml" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\color\common_signin_btn_text_light.xml" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-nl\common_strings.xml" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-sl\common_strings.xml" />
+     <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonBasicOutline.shader" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-fr\common_strings.xml" />
+     <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-hy-rAM\common_strings.xml" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfField34.shader" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-zh-rTW\common_strings.xml" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-ms-rMY\common_strings.xml" />
+     <None Include="Assets\Textures and Sprites\SF UI\Background\LICENSE.txt" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values\common_strings.xml" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-ro\common_strings.xml" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-pt\common_strings.xml" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBlur.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\SSAOShader.shader" />
+     <None Include="Assets\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\color\common_signin_btn_text_dark.xml" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ConvertDepth.shader" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-fa\common_strings.xml" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values\version.xml" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-cs\common_strings.xml" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionCurvesSimple.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderYUV.shader" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-bg\common_strings.xml" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\CreaseApply.shader" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values\wallet_strings.xml" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-da\common_strings.xml" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ChromaticAberrationShader.shader" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-es\common_strings.xml" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-nb\common_strings.xml" />
+     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\GlobalFog.shader" />
+     <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
+     <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonLitOutline.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Luminance.shader" />
+     <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonLit.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionSelective.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\Bokeh34.shader" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\AndroidManifest.xml" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-hu\common_strings.xml" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-lt\common_strings.xml" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\CameraMotionBlurDX11.shader" />
+     <None Include="Assets\Materials\UI-Default-No-Alpha.shader" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-ka-rGE\common_strings.xml" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\SeparableBlurPlus.shader" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-af\common_strings.xml" />
+     <None Include="Assets\Standard Assets\Effects\Projectors\Shaders\ProjectorLight.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MultiPassHollywoodFlares.shader" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-fi\common_strings.xml" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\README.txt" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\BlurEffectConeTaps.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\CameraMotionBlur.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\DLAA.shader" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-vi\common_strings.xml" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseAndGrainDX11.shader" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-sv\common_strings.xml" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-th\common_strings.xml" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter2.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\SeparableBlur.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\MotionBlurClear.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionEffect.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\GrayscaleEffect.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\SepiaToneEffect.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\TwirlEffect.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\VortexEffect.shader" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-zh-rCN\common_strings.xml" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values\wallet_attrs.xml" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Adaptation.shader" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\proguard.txt" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-mn-rMN\common_strings.xml" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-uk\common_strings.xml" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-en-rIN\common_strings.xml" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-zh-rHK\common_strings.xml" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-hi\common_strings.xml" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseAndGrain.shader" />
+     <None Include="Assets\Standard Assets\Effects\Projectors\Shaders\ProjectorMultiply.shader" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-sr\common_strings.xml" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\VignettingShader.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\Tonemapper.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter.shader" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-de\common_strings.xml" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA2.shader" />
+     <None Include="Assets\Plugins\Android\Soomla\AndroidManifest.xml" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-en-rGB\common_strings.xml" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-el\common_strings.xml" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrection3DLut.shader" />
+     <None Include="Assets\Plugins\Facebook\Scripts\Canvas\Resources\JSSDKBindings.txt" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\EdgeDetectNormals.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\PrepareSunShaftsBlur.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\Blend.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\BlendModesOverlay.shader" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-ja\common_strings.xml" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-tr\common_strings.xml" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\SimpleClear.shader" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-it\common_strings.xml" />
+     <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
+     <None Include="Assets\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularDisplacement.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA3Console.shader" />
+     <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-et-rEE\common_strings.xml" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset2.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendForBloom.shader" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="Mono.Cecil">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
